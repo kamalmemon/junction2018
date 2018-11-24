@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyJuncAPI", "MyJuncAPI\MyJuncAPI.csproj", "{1ECD09C9-0F92-4708-8BBA-13B70FECC3D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyJuncAPI.Test", "MyJuncAPI.Test\MyJuncAPI.Test.csproj", "{D51DDFF7-89A2-465D-96E1-135C0855C343}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ECD09C9-0F92-4708-8BBA-13B70FECC3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECD09C9-0F92-4708-8BBA-13B70FECC3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECD09C9-0F92-4708-8BBA-13B70FECC3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECD09C9-0F92-4708-8BBA-13B70FECC3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51DDFF7-89A2-465D-96E1-135C0855C343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51DDFF7-89A2-465D-96E1-135C0855C343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51DDFF7-89A2-465D-96E1-135C0855C343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51DDFF7-89A2-465D-96E1-135C0855C343}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CAC41D9-1EBB-4440-9DC3-028D7D0AD90B}
+	EndGlobalSection
+EndGlobal
