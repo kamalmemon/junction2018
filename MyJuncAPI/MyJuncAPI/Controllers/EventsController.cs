@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MyJuncAPI.Models;
 using MyJuncAPI.Services;
-using Newtonsoft.Json.Linq;
+using System;
+using System.Linq;
 
 namespace MyJuncAPI.Controllers
 {
-    [Produces("application/json")]
-    [Route("api/Events")]
-    public class EventsController : Controller
-    {
+	[Produces("application/json")]
+	[Route("api/Events")]
+	public class EventsController : Controller
+	{
 		private readonly QueryService _queryService;
 
 		public EventsController(QueryService queryService)
@@ -54,8 +50,7 @@ namespace MyJuncAPI.Controllers
 					return false;
 				});
 			}
-
 			return Ok(res);
 		}
-    }
+	}
 }

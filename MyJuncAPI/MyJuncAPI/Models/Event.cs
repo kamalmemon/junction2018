@@ -5,20 +5,6 @@ using System.Threading.Tasks;
 
 namespace MyJuncAPI.Models
 {
-	public class Name
-	{
-		public string fi { get; set; }
-		public object en { get; set; }
-		public object sv { get; set; }
-		public object zh { get; set; }
-	}
-
-	public class SourceType
-	{
-		public int id { get; set; }
-		public string name { get; set; }
-	}
-
 	public class Address
 	{
 		public string street_address { get; set; }
@@ -31,26 +17,6 @@ namespace MyJuncAPI.Models
 		public double lat { get; set; }
 		public double lon { get; set; }
 		public Address address { get; set; }
-	}
-
-	public class LicenseType
-	{
-		public int id { get; set; }
-		public string name { get; set; }
-	}
-
-	public class Image
-	{
-		public string url { get; set; }
-		public string copyright_holder { get; set; }
-		public LicenseType license_type { get; set; }
-	}
-
-	public class Description
-	{
-		public string intro { get; set; }
-		public string body { get; set; }
-		public List<Image> images { get; set; }
 	}
 
 	public class Tag
