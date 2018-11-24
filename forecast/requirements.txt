@@ -1,0 +1,8 @@
+fbprophet==0.3.post2
+Flask==1.0.2
+Flask-Cors==3.0.7
+numpy==1.15.4
+pandas==0.23.4
+pickleshare==0.7.5
+matplotlib==3.0.1
+Flask-RESTful==0.3.6
