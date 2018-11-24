@@ -41,7 +41,7 @@ namespace MyJuncAPI.Models
 		public string id { get; set; }
 		public dynamic name { get; set; }
 		public dynamic source_type { get; set; }
-		public dynamic info_url { get; set; }
+		public string info_url { get; set; }
 		public dynamic modified_at { get; set; }
 		public Location location { get; set; }
 		public dynamic description { get; set; }
@@ -57,6 +57,7 @@ namespace MyJuncAPI.Models
 		public string address { get; set; }
 		public string event_start { get; set; }
 		public string event_end { get; set; }
+		public string info_url { get; set; }
 		public List<string> tags { get; set; }
 	}
 }

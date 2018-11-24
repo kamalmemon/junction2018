@@ -34,6 +34,7 @@ namespace MyJuncAPI.Controllers
 					address = e.location?.address?.street_address?.ToString(),
 					event_start = e.event_dates?.starting_day?.ToString(),
 					event_end = e.event_dates?.ending_day?.ToString(),
+					info_url = e.info_url,
 					tags = e.tags.Select(t => t.name).ToList()
 				};
 			});
