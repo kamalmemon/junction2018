@@ -10,6 +10,11 @@ from flask import Flask, jsonify
 from flask_restful import Api, Resource, reqparse
 from forecast import getPrediction
 from flask_cors import CORS
+import pandas as pd
+from io import BytesIO
+import base64
+import json
+import matplotlib.pyplot as plt
 
 def create_app():
     # main()
@@ -27,7 +32,18 @@ def homepage():
 @app.route('/forecast/<int:grid>')
 def get(grid):
     res = getPrediction(grid)
-    return jsonify(res.to_json()), 200
+    res = res.daily[0:24]
+    #return jsonify(res.loc[res.nonzero()].mean().to_json()), 200
+    return json.dumps({'daily_mean': res.loc[res.nonzero()].mean(), 
+           'plot_img': _get_plot(res)})
+
+def _get_plot(forecast):
+    forecast.plot.barh(figsize=(6,6))
+    img = BytesIO()  # create the buffer
+    plt.savefig(img, format='png')  # save figure to the buffer
+    img.seek(0)  # rewind your buffer
+    plot_data = base64.b64encode(img.read()).decode()
+    return plot_data
 
 if __name__ == "__main__":
     #main()

@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-app-container {
+  padding: 10px;
+}
+input,
+select {
+  font-size: 16px;
+  padding: 2px;
+  color: black;
+}
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  height: 35px;
+  margin-right: 5px;
+}
+
+.react-tagsinput {
+  height: 35px;
+  width: 30%;
+  padding: 2px;
+  margin-right: 5px;
+}
+.react-tagsinput-input {
+  font-size: 16px !important;
+}
+
+.react-tagsinput--focused {
+  border: 1px solid #ccc;
+}
+.input-container {
+  display: flex;
+}
+.card {
+  background-color: white;
+  padding: 8px;
+}
+.image-container {
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-container p {
+  font-weight: bold;
+}

@@ -13,14 +13,13 @@ import numpy as np
 import datetime;
 import pickle;
 
-df = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_20180109.txt')
-df1 = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201801.txt')
-df2 = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201802.txt')
-df3 = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201803.txt')
-df4 = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201804.txt')
-df5 = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201805.txt')
-df6 = pd.read_csv('../activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201806.txt')
-frames = [df, df1, df2, df3, df4, df5, df6]
+df1 = pd.read_csv('activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201801.txt')
+df2 = pd.read_csv('activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201802.txt')
+df3 = pd.read_csv('activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201803.txt')
+df4 = pd.read_csv('activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201804.txt')
+df5 = pd.read_csv('activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201805.txt')
+df6 = pd.read_csv('activity/Uusimaa_activity_data_hourly_20_min_break_MTC_201806.txt')
+frames = [df1, df2, df3, df4, df5, df6]
 df = pd.concat(frames)
 df.head()
 # print('number of dominant zones in sample', len(df.dominant_zone.unique()))
